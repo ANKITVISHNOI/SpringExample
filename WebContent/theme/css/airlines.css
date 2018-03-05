@@ -1,0 +1,20 @@
+.airs {
+	width: 28px;
+	height: 20px;
+	background:url(airline-logos.png) no-repeat
+}
+
+/* First Row */
+.airs.airs-2K {background-position:  0px 0} /* col 1 */
+.airs.airs-3E {background-position:  -28px 0} /* col 2 */
+.airs.airs-3K {background-position: -56px 0} /* col 3 */
+/* col 4 to 12 substract substract 28 for each */
+
+
+/* Second Row Substract 19 in second value and keet it same for next 12 columns */
+.airs.airs-9H {background-position: 0 -19px} /* col 1 */
+.airs.airs-9U {background-position: -28px -19px} /* col 2 */
+/* col 4 to 12 substract substract 28 for each */
+
+
+.airs.airs-AL {background-position: 0 -38px}

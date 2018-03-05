@@ -1,0 +1,679 @@
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 1px;
+    border-top-width: 0;
+}
+.category-content {
+    position: relative;
+    padding: 18px;
+}
+
+.bg-teal-400 {
+    background-color: #26a69a;
+    border-color: #26a69a;
+    color: #fff;
+}
+.bg-warning-400 {
+    background-color: #ff7043;
+    border-color: #ff7043;
+    color: #fff;
+}
+.bg-purple-300 {
+    background-color: #9575cd;
+    border-color: #9575cd;
+    color: #fff;
+}
+.btn-float {
+    padding: 15px;
+    white-space: normal;
+    border-radius: 3px;
+}
+.btn {
+    position: relative;
+    border-radius: 2px;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-float.btn-float-lg i {
+    font-size: 32px;
+}
+.btn-float i {
+    display: block;
+    margin: 0;
+    top: 0;
+}
+.btn-float>span {
+    display: block;
+    padding-top: 10px;
+    margin-bottom: -6px;
+}
+.btn:hover, .btn:focus, .btn.focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* model css */
+.module {
+    border: 1px solid #f3f3f3;
+    border-bottom-width: 2px;
+    background: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 4px;
+    background-clip: padding-box;
+}
+.module.module-has-footer .module-inner {
+    padding-bottom: 0;
+}
+.module .module-inner {
+    padding: 30px;
+}
+.module .module-heading {
+    border-bottom: 1px solid #f3f3f7;
+    padding-bottom: 15px;
+    position: relative;
+}
+.module .module-heading .module-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+.module .module-heading .actions {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 1;
+}
+.module .module-heading .actions li {
+    vertical-align: middle;
+}
+.module .module-heading .actions li a {
+    color: #9499a3;
+}
+.dropdown-toggle {
+    cursor: pointer;
+}
+.module .module-heading .actions li {
+    vertical-align: middle;
+}
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.module .module-heading .actions li a {
+    color: #9499a3;
+}
+.module .close-module, .module .collapse-module {
+    cursor: pointer;
+}
+.module .module-heading .actions li .icon {
+    font-size: 18px;
+}
+.module .collapse-module>.icon {
+    transition: all .2s ease;
+    display: inline-block;
+}
+.module .module-content-inner {
+    padding-top: 30px;
+    padding-bottom: 135px;
+}
+.module-projects-overview .data-list {
+    position: relative;
+    padding-left: 0;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.module-projects-overview .item {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.module-projects-overview .item-1 a {
+    background: #75c181;
+}
+.module-projects-overview .item a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 15px;
+    border-radius: 4px;
+    background-clip: padding-box;
+}
+.module-projects-overview .item .icon {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.module-projects-overview .item span {
+    display: block;
+}
+.module .module-footer {
+    background: #fff;
+    border-top: 1px solid #f3f3f7;
+        padding: 8px;
+}
+.module .module-footer .meta {
+    margin-bottom: 0;
+    color: #9499a3;
+    font-size: 12px;
+}
+p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.text-center {
+    margin: 0px; 
+}
+
+
+
+.module-projects-overview .data-list {
+    position: relative;
+    padding-left: 0;
+    overflow: hidden;
+    margin-bottom: 30px
+}
+
+.module-projects-overview .item {
+    display: inline-block;
+    margin-bottom: 15px
+}
+
+.module-projects-overview .item a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 15px;
+    border-radius: 4px;
+    background-clip: padding-box
+}
+
+.module-projects-overview .item span {
+    display: block
+}
+
+.module-projects-overview .item .icon {
+    font-size: 26px;
+    margin-bottom: 5px
+}
+
+.module-projects-overview .item .data {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.module-projects-overview .item .desc {
+    font-size: 14px
+}
+
+.module-projects-overview .item-1 a {
+    background: #75c181
+}
+
+.module-projects-overview .item-1 a:hover {
+    background: #63b971
+}
+
+.module-projects-overview .item-2 a {
+    background: #f8a13f
+}
+
+.module-projects-overview .item-2 a:hover {
+    background: #f79526
+}
+
+.module-projects-overview .item-3 a {
+    background: #ea5395
+}
+
+.module-projects-overview .item-3 a:hover {
+    background: #e73c87
+}
+
+.module-projects-overview .item-4 a {
+    background: #8a40a7
+}
+.module-projects-overview .item-4 a:hover {
+    background: #8a40a7
+}
+
+.module-projects-overview .title {
+    font-size: 14px;
+    color: #616670
+}
+
+.module-projects-overview .title .icon {
+    font-size: 16px;
+    color: #a2a6af;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.module-projects-overview .inner {
+    padding: 30px
+}
+
+.module-projects-sales .figure-total {
+    margin-top: 0;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #616670;
+    color: #75c181;
+    font-weight: 300
+}
+
+.module-projects-sales .figure-total .meta {
+    font-size: 13px;
+    color: #a2a6af;
+    vertical-align: super;
+    padding-left: 5px
+}
+
+.module-projects-sales .list-currency {
+    overflow: hidden
+}
+
+.module-projects-sales .list-currency li {
+    margin-bottom: 15px;
+    overflow: hidden
+}
+
+.module-projects-sales .list-currency .flag {
+    max-width: 30px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 5px
+}
+
+.module-projects-sales .list-currency .progress-container {
+    float: left;
+    margin-top: 5px
+}
+
+.module-projects-sales .list-currency .progress-container .progress-pc {
+    color: #a2a6af;
+    margin-right: 2px;
+    line-height: 1;
+    float: left;
+    min-width: 30px;
+    margin-top: 3px
+}
+
+.module-projects-sales .list-currency .progress-container .progress {
+    height: 20px;
+    float: left;
+    margin-bottom: 0;
+    margin-right: 15px
+}
+
+.module-projects-sales .list-currency .figure-sub {
+    float: left;
+    font-size: 14px;
+    line-height: 1;
+    margin-top: 6px;
+    color: #797f8b
+}
+
+.module-projects-list .progress-container {
+    overflow: hidden
+}
+
+.module-projects-list .progress-container .progress {
+    margin-bottom: 0;
+    max-width: 100px;
+    display: inline-block;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px
+}
+
+.module-projects-list .progress-container .progress-pc {
+    color: #797f8b;
+    float: left;
+    line-height: 1
+}
+
+.module-projects-list .truncate {
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.module-projects-list .label {
+    text-transform: uppercase
+}
+
+.module-tickets th.number {
+    width: 40px
+}
+
+.module-tickets .label {
+    text-transform: uppercase
+}
+
+.module-tickets .truncate {
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.module-projects-activities .tab-pane {
+    padding: 15px 0
+}
+
+.module-projects-activities .item {
+    position: relative;
+    padding: 30px 0;
+    padding-left: 70px;
+    border-bottom: 1px solid #f3f3f7
+}
+
+.module-projects-activities .item:first-child {
+    padding-top: 0
+}
+
+.module-projects-activities .item:last-child {
+    border-bottom: 0;
+    margin-bottom: 0
+}
+
+.module-projects-activities .item .profile {
+    position: absolute;
+    left: 0
+}
+
+.module-projects-activities .item .profile .profile-inner {
+    position: relative
+}
+
+.module-projects-activities .item .profile img {
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    border-radius: 50%;
+    background-clip: padding-box
+}
+
+.module-projects-activities .item .profile .status {
+    display: inline-block;
+    position: absolute;
+    right: -4px;
+    bottom: 5px;
+    width: 12px;
+    height: 12px;
+    background: #c3c3c3;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-clip: padding-box
+}
+
+.module-projects-activities .item .profile .status.online {
+    background: #75c181
+}
+
+.module-projects-activities .item .profile .status.busy {
+    background: #f8a13f
+}
+
+.module-projects-activities .activity .summary {
+    margin-bottom: 10px
+}
+
+.module-projects-activities .activity .summary .profile-name {
+    color: #797f8b
+}
+
+.module-projects-activities .activity .summary .profile-name:hover {
+    color: #494d55
+}
+
+.module-projects-activities .activity .excerpt {
+    margin-bottom: 15px;
+    background: #fafafa;
+    padding: 15px
+}
+
+.module-projects-activities .activity .excerpt a {
+    color: #616670
+}
+
+.module-projects-activities .activity .excerpt a:hover {
+    color: #494d55;
+    text-decoration: none
+}
+
+.module-projects-activities .activity .meta {
+    color: #9499a3;
+    margin-bottom: 0
+}
+
+.module-projects-activities .activity .meta a {
+    color: #9499a3
+}
+
+.module-projects-activities .activity .meta a:hover {
+    color: #40babd
+}
+
+.theme-2 .module-projects-activities .activity .meta a:hover {
+    color: #6dbd63
+}
+
+.theme-3 .module-projects-activities .activity .meta a:hover {
+    color: #497cb1
+}
+
+.theme-4 .module-projects-activities .activity .meta a:hover {
+    color: #ec6952
+}
+
+.module-projects-activities .activity .meta .icon {
+    font-size: 14px;
+    vertical-align: middle;
+    margin-right: 5px
+}
+
+.module-projects-invoices .module-content-inner {
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.module-projects-invoices .table {
+    margin-bottom: 0
+}
+
+.module-projects-invoices .currency {
+    color: #9499a3
+}
+
+.module-projects-invoices .date a {
+    color: #797f8b
+}
+
+.module-projects-invoices .truncate {
+    max-width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.world-map {
+    width: 100%;
+    height: 300px;
+    max-width: 100%
+}
+
+@media (max-width:767px) {
+    .module-projects-overview ul .item .icon {
+        font-size: 20px
+    }
+
+    .module-projects-overview ul .item .data {
+        font-size: 32px
+    }
+
+    .module-projects-overview ul .item .desc {
+        font-size: 12px
+    }
+
+    .module-projects-sales .figure-total {
+        font-size: 32px
+    }
+
+    .progress-container .progress {
+        width: 100px
+    }
+
+    .module-projects-sales .list-currency .flag {
+        width: 20px;
+        margin-right: 10px;
+        margin-top: 5px
+    }
+
+    .module-projects-sales .list-currency .figure-sub {
+        font-size: 14px
+    }
+}
+
+@media (min-width:768px) {
+    .progress-container .progress {
+        width: 100px
+    }
+}
+
+@media (min-width:992px) {
+    .progress-container .progress {
+        width: 120px
+    }
+}
+
+@media (min-width:1200px) {
+    .progress-container .progress {
+        width: 140px
+    }
+
+    .module-projects-sales .list-currency .flag {
+        max-width: 20px;
+        margin-top: 4px
+    }
+}
+
+@media (min-width:1400px) {
+    .progress-container .progress {
+        width: 180px
+    }
+
+    .module-projects-sales .list-currency .flag {
+        max-width: 30px;
+        margin-top: 0
+    }
+}
+.label-number {
+    background: #e9e9e9;
+    color: #494d55;
+    font-weight: 600;
+    border-radius: 0;
+    background-clip: padding-box;
+}
+
+.label-info {
+    background: #58bbee
+}
+
+.label-warning {
+    background: #f8a13f
+}
+
+.label-danger {
+    background: #f77b6b
+}
+
+.label-new {
+    background: #75c181
+}
+
+.label-normal {
+    background: #58bbee
+}
+
+.label-high {
+    background: #f8a13f
+}
+
+.label-grey,.label-low {
+    background: #c3c3c3
+}
+
+.label-critical,.label-pink {
+    background: #ea5395
+}
+
+.label-purple {
+    background: #8a40a7
+}
+
+.label-yellow {
+    background: #f2b542
+}
+
+.label-open {
+    color: #75c181
+}
+
+.label-closed,.label-open {
+    background: none;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.label-closed {
+    color: #f77b6b
+}
+
+.label-todo {
+    color: #f8a13f
+}
+
+.label-review,.label-todo {
+    background: none;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.label-review {
+    color: #616670
+}
+
+.label-progress {
+    color: #8a40a7;
+    background: none;
+    font-size: 12px;
+    font-weight: 400
+}
+.modal {
+}
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+}
+.btn:hover, .btn:focus, .btn.focus {
+    color: #0e0e0e;
+    text-decoration: none;
+}

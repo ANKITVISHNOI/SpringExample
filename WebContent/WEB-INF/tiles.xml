@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+ "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="base" template="/jsp/template_admin_base.jsp">
+<!-- 		<put-attribute name="sidebar" value="/jsp/template_admin_sidebar.jsp" /> -->
+		<put-attribute name="header" value="/jsp/template_admin_header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/jsp/template_admin_footer.jsp" />
+	</definition>
+
+	<!-- Product Tiles -->
+	<definition name="addProduct" extends="base">
+	<put-attribute name="title" value="Product Add"></put-attribute>
+	<put-attribute name="body" value="/jsp/product-add.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="editProduct" extends="base">
+	<put-attribute name="title" value="Product Edit"></put-attribute>
+	<put-attribute name="body" value="/jsp/product-edit.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="listProduct" extends="base">
+	<put-attribute name="title" value="Product List"></put-attribute>
+	<put-attribute name="body" value="/jsp/product-list.jsp"></put-attribute>
+	</definition>
+	
+	<!-- User Signup Tiles -->
+	<definition name="registerUser" extends="base">
+	<put-attribute name="title" value="User Add"></put-attribute>
+	<put-attribute name="body" value="/jsp/user-add.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="editUser" extends="base">
+	<put-attribute name="title" value="User Edit"></put-attribute>
+	<put-attribute name="body" value="/jsp/user-edit.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="listUser" extends="base">
+	<put-attribute name="title" value="User List"></put-attribute>
+	<put-attribute name="body" value="/jsp/user-list.jsp"></put-attribute>
+	</definition>
+
+	<!-- User Login Tiles -->
+	<definition name="loginUser" extends="base">
+	<put-attribute name="title" value="User Login"></put-attribute>
+	<put-attribute name="body" value="/jsp/user-login.jsp"></put-attribute>
+	</definition>
+
+
+</tiles-definitions>
