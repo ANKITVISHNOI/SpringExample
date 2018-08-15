@@ -67,7 +67,8 @@ public class ProductDaoImpl implements ProductDao{
 	            {
 	            HSSFRow row = hssfSheet.createRow(rownum++);
 	            createList(product, row); 
-	                
+	            
+	             System.out.println("Ankut mshfouh");   
 	        }    
 	        
 	         FileOutputStream out = new FileOutputStream(new File("E://opt/NewFile.xls")); // file name with path
