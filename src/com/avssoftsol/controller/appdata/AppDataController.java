@@ -3,6 +3,7 @@ package com.avssoftsol.controller.appdata;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +21,8 @@ import com.avssoftsol.service.appdata.AppDataServiceImpl;
 @Controller
 @RequestMapping("/appdata")
 public class AppDataController {
-
+	
+	//@Autowired AppDataService appDataServices; 
 	private AppDataService appDataServices = new AppDataServiceImpl();
 	
 	static final Logger logger = Logger.getLogger(AppDataController.class);

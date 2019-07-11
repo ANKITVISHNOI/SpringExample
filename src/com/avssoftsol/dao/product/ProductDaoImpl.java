@@ -51,7 +51,7 @@ public class ProductDaoImpl implements ProductDao{
 			productList = criteria.list();
 
 			//Object[] myArray = productList.toArray();
-			HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
+			/*HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
 			HSSFSheet hssfSheet = hssfWorkbook.createSheet("Excel");
 			
 			HSSFRow hssfRowHead = hssfSheet.createRow((short) 0);
@@ -67,8 +67,6 @@ public class ProductDaoImpl implements ProductDao{
 	            {
 	            HSSFRow row = hssfSheet.createRow(rownum++);
 	            createList(product, row); 
-	            
-	             System.out.println("Ankut mshfouh");   
 	        }    
 	        
 	         FileOutputStream out = new FileOutputStream(new File("E://opt/NewFile.xls")); // file name with path
@@ -76,7 +74,7 @@ public class ProductDaoImpl implements ProductDao{
 	            hssfWorkbook.close();
 	            out.close(); 
 	            
-			System.out.print("file created");
+			System.out.print("file created");*/
 
 
 		} catch (Exception e) {
@@ -90,7 +88,7 @@ public class ProductDaoImpl implements ProductDao{
 	}
 
 
-	private void createList(Product product, HSSFRow row) {
+	/*private void createList(Product product, HSSFRow row) {
 		Cell cell = row.createCell(0);
         cell.setCellValue(product.getId());
      
@@ -100,7 +98,7 @@ public class ProductDaoImpl implements ProductDao{
         cell = row.createCell(2);
         cell.setCellValue(product.getCode());
 		
-	}
+	}*/
 
 	@Override
 	public Product getProductById(Long id) {

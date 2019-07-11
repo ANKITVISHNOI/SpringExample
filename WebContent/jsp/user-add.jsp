@@ -57,7 +57,19 @@
 					<div class="input-group">
 						<span class="input-group-addon"><i
 							class="glyphicon glyphicon-earphone"></i></span> <input
-							name="mobile" placeholder="+91 88888888888" class="form-control"
+							name="phone" placeholder="+91 88888888888" class="form-control"
+							type="text">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-4 control-label">Alternate Contact No.</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-earphone"></i></span> <input
+							name="alternatePhone" placeholder="+91 88888888888" class="form-control"
 							type="text">
 					</div>
 				</div>

@@ -58,7 +58,7 @@
 	</bean>
 	
 	<bean id="signupDAO" class="com.avssoftsol.signup.dao.SignupDaoImpl">
-		<constructor-arg>
+		<constructor-arg> 
 			<ref bean="sessionFactory" />
 		</constructor-arg>
 	</bean> -->
