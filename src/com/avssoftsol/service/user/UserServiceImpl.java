@@ -33,12 +33,18 @@ public class UserServiceImpl implements UserService{
 		User userOld = userDao.getUserById(userUpdate.getId());
 		
 		if (userUpdate != null) {
-			userOld.setEmail(userUpdate.getEmail());
 			userOld.setFirstName(userUpdate.getFirstName());
 			userOld.setLastName(userUpdate.getLastName());
+			userOld.setEmail(userUpdate.getEmail());
 			userOld.setPhone(userUpdate.getPhone());
-			userOld.setPassword(userUpdate.getPassword());
-
+			userOld.setAlternatePhone(userUpdate.getAlternatePhone());
+			userOld.setAddress1(userUpdate.getAddress1());
+			userOld.setAddress2(userUpdate.getAddress2());
+			userOld.setCountry(userUpdate.getCountry());
+			userOld.setState(userUpdate.getState());
+			userOld.setCity(userUpdate.getCity());
+			userOld.setPinCode(userUpdate.getPinCode());
+			
 			userDao.updateUser(userOld);
 		}
 
@@ -47,6 +53,12 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public void deleteUser(Long id) {
 		userDao.deleteUser(id);
+	}
+
+	@Override
+	public User getUserByEmail(String email) {
+		User user = userDao.getUserByEmail(email);
+		return user;
 	}
 
 

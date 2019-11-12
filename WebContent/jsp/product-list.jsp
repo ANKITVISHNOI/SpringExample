@@ -104,12 +104,11 @@
 			<div class="pnl">
 				<div class="hd clearfix">
 					<h5 class="pull-left">Product List</h5>
-					<!-- <div class="set pull-right">
-						<a href="addProductForm" class="plus-icon" data-toggle="modal"
-							data-target="#add_event"> <span class="tooltipp"
+					<div class="set pull-right">
+						<a href="addProductForm" class="plus-icon"> <span class="tooltipp"
 							title="Add Product"> <img alt="" class="img-responsive icon"
 								src="theme/png_icons/add1.png"></span></a>
-					</div> -->
+					</div>
 				</div>
 				<div class="cnt cnt-table">
 					<div class="fw-container no-table-css">

@@ -10,7 +10,13 @@
 		<put-attribute name="body" value="" />
 		<put-attribute name="footer" value="/jsp/template_admin_footer.jsp" />
 	</definition>
-
+	
+	<!-- Main Tiles -->
+	<definition name="index" extends="base">
+	<put-attribute name="title" value="Index Page"></put-attribute>
+	<put-attribute name="body" value="/jsp/index.jsp"></put-attribute>
+	</definition>
+	
 	<!-- Product Tiles -->
 	<definition name="addProduct" extends="base">
 	<put-attribute name="title" value="Product Add"></put-attribute>
@@ -31,6 +37,11 @@
 	<definition name="registerUser" extends="base">
 	<put-attribute name="title" value="User Add"></put-attribute>
 	<put-attribute name="body" value="/jsp/user-add.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="alreadyRegisteredUserLogin" extends="base">
+	<put-attribute name="title" value="User Add"></put-attribute>
+	<put-attribute name="body" value="/jsp/registered-user-login.jsp"></put-attribute>
 	</definition>
 	
 	<definition name="editUser" extends="base">

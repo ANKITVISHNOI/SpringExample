@@ -23,8 +23,6 @@
 			</center>
 			<br>
 
-			<!-- Text input-->
-
 			<div class="form-group">
 				<label class="col-md-4 control-label">First Name</label>
 				<div class="col-md-4 inputGroupContainer">
@@ -35,8 +33,6 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Text input-->
 
 			<div class="form-group">
 				<label class="col-md-4 control-label">Last Name</label>
@@ -49,7 +45,39 @@
 				</div>
 			</div>
 
-			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label">E-Mail</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-envelope"></i></span> <input name="email"
+							placeholder="E-Mail Address" class="form-control" type="text">
+					</div>
+				</div>
+			</div>
+	
+			<div class="form-group">
+				<label class="col-md-4 control-label">Password</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-user"></i></span> <input name="password"
+							placeholder="Password" class="form-control" type="password">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label class="col-md-4 control-label">Confirm Password</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-user"></i></span> <input
+							name="confirm_password" placeholder="Confirm Password"
+							class="form-control" type="password">
+					</div>
+				</div>
+			</div>
 
 			<div class="form-group">
 				<label class="col-md-4 control-label">Contact No.</label>
@@ -74,46 +102,73 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Text input-->
+			
 			<div class="form-group">
-				<label class="col-md-4 control-label">E-Mail</label>
+				<label class="col-md-4 control-label">Address Line1</label>
 				<div class="col-md-4 inputGroupContainer">
 					<div class="input-group">
 						<span class="input-group-addon"><i
-							class="glyphicon glyphicon-envelope"></i></span> <input name="email"
-							placeholder="E-Mail Address" class="form-control" type="text">
+							class="glyphicon glyphicon-user"></i></span> <input name="address1"
+							placeholder="Address Line1" class="form-control" type="text">
 					</div>
 				</div>
 			</div>
-
-			<!-- Text input-->
-
+			
 			<div class="form-group">
-				<label class="col-md-4 control-label">Password</label>
+				<label class="col-md-4 control-label">Address Line2</label>
 				<div class="col-md-4 inputGroupContainer">
 					<div class="input-group">
 						<span class="input-group-addon"><i
-							class="glyphicon glyphicon-user"></i></span> <input name="password"
-							placeholder="Password" class="form-control" type="password">
+							class="glyphicon glyphicon-user"></i></span> <input name="address2"
+							placeholder="Address Line2" class="form-control" type="text">
 					</div>
 				</div>
 			</div>
-
-			<!-- Text input-->
-
+			
 			<div class="form-group">
-				<label class="col-md-4 control-label">Confirm Password</label>
+				<label class="col-md-4 control-label">Country</label>
 				<div class="col-md-4 inputGroupContainer">
 					<div class="input-group">
 						<span class="input-group-addon"><i
-							class="glyphicon glyphicon-user"></i></span> <input
-							name="confirm_password" placeholder="Confirm Password"
-							class="form-control" type="password">
+							class="glyphicon glyphicon-user"></i></span> <input name="country"
+							placeholder="Country" class="form-control" type="text">
 					</div>
 				</div>
 			</div>
-
+			
+			<div class="form-group">
+				<label class="col-md-4 control-label">State</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-user"></i></span> <input name="state"
+							placeholder="State" class="form-control" type="text">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-4 control-label">City</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-user"></i></span> <input name="city"
+							placeholder="City" class="form-control" type="text">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-4 control-label">Pin/Zip</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-user"></i></span> <input name="pinCode"
+							placeholder="Pin/Zip" class="form-control" type="text">
+					</div>
+				</div>
+			</div>
+			
 			<!-- Select Basic -->
 
 			<!-- Success message -->
@@ -199,7 +254,7 @@ function myform() {
 														}
 													}
 												},
-												mobile : {
+												/* mobile : {
 													validators : {
 														stringLength : {
 															min : 12,
@@ -209,7 +264,7 @@ function myform() {
 															}
 														}
 													}
-												}
+												} */
 											}
 										})
 								.on('success.form.bv',function(e) {

@@ -125,8 +125,14 @@
 												<th>S.No</th>
 												<th>First Name</th>
 												<th>Last Name</th>
-												<th>Mobile</th>
 												<th>Email</th>
+												<th>Contact No.</th>
+												<th>Address Line1</th>
+												<th>Address Line2</th>
+												<th>Country</th>
+												<th>City</th>
+												<th>State</th>
+												<th>Pin/Zip</th>
 												<th style="width: 50px;">
 													<div class="center"
 														style="font-size: 18px; position: relative; top: 2px;">
@@ -142,8 +148,14 @@
 													<td data-title="S.No">${status.index + 1}</td>
 													<td data-title="First Name">${user.firstName}</td>
 													<td data-title="Last Name">${user.lastName}</td>
-													<td data-title="Mobile">${user.mobile}</td>
 													<td data-title="Email">${user.email}</td>
+													<td data-title="Contact No.">${user.phone}</td>
+													<td data-title="Address Line1">${user.address1}</td>
+													<td data-title="Address Line2">${user.address2}</td>
+													<td data-title="Country">${user.country}</td>
+													<td data-title="City">${user.city}</td>
+													<td data-title="State">${user.state}</td>
+													<td data-title="Pin/Zip">${user.pinCode}</td>
 													<td data-title="Setting"><a class="a-tag"
 														href="${pageContext.request.contextPath}/editUser?id=${user.id}"
 														target=""> <i class="icon-eye-open"></i> &nbsp;Edit
@@ -160,250 +172,7 @@
 						</div>
 					</div>
 				</div>
-				<%-- <div class="modal fade" id="add_event" role="dialog">
-						<div class="modal-dialog">
-							<!-- Modal content-->
-							<div class="modal-content">
-								<div class="modal-header bg-primary">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h2 class="modal-title">Add New Event</h2>
-								</div>
-								<div class="modal-body ">
-									<form name="eventForm" id="eventForm" method="post"
-										class="form-horizontal">
-
-
-										<h5 class="m-t-lg with-border">Details</h5>
-
-										<div class=" row">
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">Event
-													Name </label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<input type="text" name="eventName" id="eventName"
-																placeholder="Event Name" class="form-control" />
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">Event
-													Type </label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<select class="form-control input-lg" name="eventTypeId"
-																id="eventTypeId">
-																<option selected="selected" value="">Select
-																	Event Type</option>
-																<c:forEach items="${eventTypeList}" var="type">
-																	<option value="${type.id}">${type.name}</option>
-																</c:forEach>
-															</select>
-														</div>
-													</div>
-												</div>
-											</div>
-
-										</div>
-										<div class="row">
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">Description
-												</label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<textarea name="description" id="description"
-																placeholder="Description" class="form-control"></textarea>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">Is
-													External Organizer/Incharge ? </label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<input class="form-control" id="external" name="external"
-																type="checkbox">
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">Select
-													Organizer/Incharge Name </label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<select class="form-control input-lg" name="userId"
-																id="userId">
-																<option selected="selected" value="">Select
-																	User</option>
-																<c:forEach items="${userList}" var="user">
-																	<option value="${user.id}">${user.firstName}
-																		${user.lstName}</option>
-																</c:forEach>
-															</select>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="row" id="showExt" style="display: none;">
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">Organizer/Incharge
-													Name </label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<input type="text" name="organizerName"
-																id="organizerName" placeholder="Organizer/Incharge Name"
-																class="form-control">
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">
-													Organizer/Incharge Mobile </label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<input type="text" name="organizerMobile"
-																id="organizerName" placeholder="Organizer/Incharge Name"
-																class="form-control">
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">Start
-													Date </label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<input type="text" name="startDate" id="startDate"
-																placeholder="Start Date" class="form-control"
-																data-provide="datepicker">
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">End
-													Date </label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<input type="text" name="endDate" id="endDate"
-																placeholder="End Date" class="form-control"
-																data-provide="datepicker">
-														</div>
-													</div>
-												</div>
-											</div>
-
-										</div>
-
-										<div class="row">
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">Event
-													For </label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<select name="eventFor" id="eventFor"
-																class="form-control input-lg">
-																<option value="" selected>Please Select</option>
-																<option value="ForALL">For ALL</option>
-																<option value="Course">Selected Course</option>
-																<option value="Department">Department</option>
-															</select>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="row" id="course" style="display: none;">
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">Select
-													Course </label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<select name="batchId" id="batchId"
-																class="form-control input-lg"
-																onchange="javascript:getSectionListJsonByBatchId()">
-																<option value="" selected>Select</option>
-																<c:forEach items="${batchList}" var="batch">
-																	<option value="${batch.id}">${batch.programType.name}(${batch.name})</option>
-																</c:forEach>
-															</select>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-md-6">
-													<label class="form-control-label" for="prependedInput">Select
-														Section </label>
-													<div class="controls">
-														<div class="form-group">
-															<div class="col-md-12">
-																<select class="form-control input-lg" name="sectionId"
-																	id="sectionId">
-																	<option value="" selected>Select</option>
-																</select>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="row" id="department" style="display: none;">
-											<div class="col-md-6">
-												<label class="form-control-label" for="prependedInput">Department
-												</label>
-												<div class="controls">
-													<div class="form-group">
-														<div class="col-md-12">
-															<select class="form-control input-lg" name="departmentId"
-																id="departmentId">
-																<option selected="selected" value="">Select
-																	Department</option>
-																<c:forEach items="${departmentList}" var="dep">
-																	<option value="${dep.id}">${dep.name}</option>
-																</c:forEach>
-															</select>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<hr>
-										<div class="set" style="margin-bottom: 20px;">
-											<div class="form-actions">
-												<button type="submit" class="btn btn-default"
-													data-dismiss="modal" style="float: left;">Cancel</button>
-												<button type="submit" class="btn btn-primary pull-right"
-													id="eventSubmitBtn">Save</button>
-											</div>
-										</div>
-									</form>
-									<br>
-								</div>
-							</div>
-						</div>
-					</div> --%>
-			</div>
+				</div>
 		</div>
 	</div>
 </div>

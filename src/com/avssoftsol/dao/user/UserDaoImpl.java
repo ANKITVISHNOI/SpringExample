@@ -5,6 +5,7 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.avssoftsol.app.util.HibernateUtil;
@@ -59,6 +60,24 @@ public class UserDaoImpl implements UserDao{
 		try {
 			session = HibernateUtil.getSessionFactory().openSession();
 			user = (User) session.get(User.class, id);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally{
+			session.close();
+		}
+		return user;
+	}
+	
+	@Override
+	public User getUserByEmail(String email) {
+		User user = null;
+		Session session = null;
+		try {
+			session = HibernateUtil.getSessionFactory().openSession();
+			Criteria cr = session.createCriteria(User.class);
+			cr.add(Restrictions.eq("email", email));
+			user = (User) cr.uniqueResult();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

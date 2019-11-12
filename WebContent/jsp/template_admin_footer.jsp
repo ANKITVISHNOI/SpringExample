@@ -9,7 +9,7 @@
 				<h3>Company<span>logo</span></h3>
 
 				<p class="footer-links">
-					<a href="#">Home</a>
+					<a href="${pageContext.request.contextPath}/">Home</a>
 					·
 					<a href="#">About</a>
 					·

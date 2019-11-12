@@ -33,14 +33,20 @@ public class UserController {
 
 	@RequestMapping(value="/saveUser", method=RequestMethod.POST)
 	public ModelAndView saveUser(@ModelAttribute("user") User user){
+		ModelAndView modelAndView = null;
 		try {
-			if (user != null) {
+			if (user != null && !isUserExist(user.getEmail())) {
 				userService.saveUser(user);
+				modelAndView = new ModelAndView("redirect:/"); 	// On welcome or home page 
+				return modelAndView;
+			}
+			else {
+				modelAndView = new ModelAndView("alreadyRegisteredUserLogin");
+				return modelAndView;
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 		return new ModelAndView("redirect:/listUser");
 
 	}
@@ -101,8 +107,19 @@ public class UserController {
 
 	}
 
-	
-	
+	public boolean isUserExist(String email) {
+		boolean isUserExist = false;
+		User user = null;
+		try {
+			user = userService.getUserByEmail(email);
+			if (user != null) {
+				isUserExist = true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return isUserExist;
+	}
 	
 	public UserService getUserService() {
 		return userService;

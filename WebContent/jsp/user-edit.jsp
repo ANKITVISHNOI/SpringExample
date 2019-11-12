@@ -48,54 +48,7 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Text input-->
-
-			<div class="form-group">
-				<label class="col-md-4 control-label">Contact No.</label>
-				<div class="col-md-4 inputGroupContainer">
-					<div class="input-group">
-						<span class="input-group-addon"><i
-							class="glyphicon glyphicon-earphone"></i></span> <input
-							name="mobile" value="${user.mobile}" class="form-control"
-							type="text">
-					</div>
-				</div>
-			</div>
-			<!-- <div class="form-group"> 
-  <label class="col-md-4 control-label">Department / Office</label>
-    <div class="col-md-4 selectContainer">
-    <div class="input-group">
-        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-    <select name="department" class="form-control selectpicker">
-      <option value="">Select your Department/Office</option>
-      <option>Department of Engineering</option>
-      <option>Department of Agriculture</option>
-      <option >Accounting Office</option>
-      <option >Tresurer's Office</option>
-      <option >MPDC</option>
-      <option >MCTC</option>
-      <option >MCR</option>
-      <option >Mayor's Office</option>
-      <option >Tourism Office</option>
-    </select>
-  </div>
-</div>
-</div> -->
-
-			<!-- Text input-->
-
-			<!-- <div class="form-group">
-  <label class="col-md-4 control-label">Username</label>  
-  <div class="col-md-4 inputGroupContainer">
-  <div class="input-group">
-  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="user_name" placeholder="Username" class="form-control"  type="text">
-    </div>
-  </div>
-</div> -->
-
-			<!-- Text input-->
+			
 			<div class="form-group">
 				<label class="col-md-4 control-label">E-Mail</label>
 				<div class="col-md-4 inputGroupContainer">
@@ -106,33 +59,100 @@
 					</div>
 				</div>
 			</div>
-
+			
 			<!-- Text input-->
 
 			<div class="form-group">
-				<label class="col-md-4 control-label">Password</label>
+				<label class="col-md-4 control-label">Contact No.</label>
 				<div class="col-md-4 inputGroupContainer">
 					<div class="input-group">
 						<span class="input-group-addon"><i
-							class="glyphicon glyphicon-user"></i></span> <input name="password"
-							placeholder="Password" class="form-control" type="password">
+							class="glyphicon glyphicon-earphone"></i></span> <input
+							name="phone" value="${user.phone}" class="form-control"
+							type="text">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-4 control-label">Alternate Contact No.</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-earphone"></i></span> <input
+							name="alternatePhone" value="${user.alternatePhone}" class="form-control"
+							type="text">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-4 control-label">Address Line1</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-user"></i></span> <input name="address1"
+							value="${user.address1}" class="form-control" type="text">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-4 control-label">Address Line2</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-user"></i></span> <input name="address2"
+							value="${user.address2}" class="form-control" type="text">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-4 control-label">Country</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-user"></i></span> <input name="country"
+							value="${user.country}" class="form-control" type="text">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-4 control-label">State</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-user"></i></span> <input name="state"
+							value="${user.state}" class="form-control" type="text">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-4 control-label">City</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-user"></i></span> <input name="city"
+							value="${user.city}" class="form-control" type="text">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-md-4 control-label">Pin/Zip</label>
+				<div class="col-md-4 inputGroupContainer">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="glyphicon glyphicon-user"></i></span> <input name="pinCode"
+							value="${user.pinCode}" class="form-control" type="text">
 					</div>
 				</div>
 			</div>
 
-			<!-- Text input-->
-
-			<div class="form-group">
-				<label class="col-md-4 control-label">Confirm Password</label>
-				<div class="col-md-4 inputGroupContainer">
-					<div class="input-group">
-						<span class="input-group-addon"><i
-							class="glyphicon glyphicon-user"></i></span> <input
-							name="confirm_password" placeholder="Confirm Password"
-							class="form-control" type="password">
-					</div>
-				</div>
-			</div>
+			
 
 			<!-- Select Basic -->
 
@@ -149,7 +169,7 @@
 					<br>
 					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 					<button type="submit" class="btn btn-warning">
-						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRegister <span
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUpdate <span
 							class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 					</button>
 				</div>

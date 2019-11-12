@@ -34,6 +34,7 @@
 <!-- Font Awesome Icons -->
 <link rel="stylesheet" href="theme/css/style.css">
 <link rel="stylesheet" href="theme/css/jquery-ui.css">
+<link rel="stylesheet" href="theme/css/myStyle.css">
 
 <!-- <link rel="stylesheet" type="text/css" href="theme/plugins/css/tooltipster.bundle.min.css" />
 <link rel="stylesheet" type="text/css" href="theme/plugins/css/tooltipster-sideTip-borderless.min.css" /> -->

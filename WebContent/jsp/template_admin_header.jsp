@@ -12,7 +12,7 @@
 		</h1>
 
 		<nav>
-			<a href="#" class="selected">Home</a><a href="#">About</a> <a href="#">Contact Us</a><a href="#">Blog</a>
+			<a href="${pageContext.request.contextPath}/" class="selected">Home</a><a href="#">About</a> <a href="#">Contact Us</a><a href="#">Blog</a>
 		</nav>
 
 		<ul>

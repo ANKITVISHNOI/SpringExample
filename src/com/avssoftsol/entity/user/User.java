@@ -63,8 +63,6 @@ public class User implements Serializable {
 	@JsonIgnore
 	@Column(name="updated_at")
 	private Timestamp updatedAt;
-	
-	
 
 	public Long getId() {
 		return id;
@@ -185,6 +183,9 @@ public class User implements Serializable {
 	public void setUpdatedAt(Timestamp updatedAt) {
 		this.updatedAt = updatedAt;
 	}
+
+	
+	
 
 
 }
